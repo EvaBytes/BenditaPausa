@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-},
-
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EvaBytes/BenditaPausa.git"
@@ -21,8 +20,10 @@
   },
   "homepage": "https://github.com/EvaBytes/BenditaPausa#readme",
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.7.0",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.7.0",
