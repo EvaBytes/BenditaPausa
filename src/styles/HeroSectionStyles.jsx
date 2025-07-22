@@ -6,7 +6,7 @@ export const HeroSection = styled.section`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2rem 1rem;     
+  padding: 2rem 2rem;     
   color: black;
   text-align: left;
   font-size: 1rem;
@@ -15,9 +15,7 @@ export const HeroSection = styled.section`
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-    padding: 4rem 2rem;
     font-size: 1.8rem;
-
 }
 
 
@@ -38,7 +36,8 @@ export const HeroSection = styled.section`
   }
 
   @media (min-width: 768px) {
-    padding: 4rem 2rem;  
+    font-size:2.5rem; 
+    padding: 4rem 5rem;  
     
     button {
       margin-top: 2rem;

@@ -69,7 +69,9 @@ export const SearchInput = styled.input`
   padding: 0.5rem 1rem;
   border-radius: 20px;
   border: 1px solid #ccc;
-  font-size: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .8rem;
+
 `;
 
 export const MobileTopBar = styled.div`

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { HeroSection } from "../styles/HeroSectionStyles.jsx";
-import { AboutUsSection, BoxesContainer, Box } from "../styles/AboutUsStyles.jsx";
-
+import { HeroSection } from "../../styles/HeroSectionStyles.jsx";
+import { AboutUsSection, BoxesContainer, Box } from "../../styles/AboutUsStyles.jsx";
+import NewsletterForm from "./NewsletterForm.jsx";
 
 const Home = () => {
   return (
@@ -77,29 +77,6 @@ const Home = () => {
   );
 };
 
-// Componente formulario newsletter
-const NewsletterForm = () => {
-  const [email, setEmail] = React.useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Gracias por suscribirte, ${email}!`);
-    setEmail("");
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="email"
-        placeholder="Tu email"
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-        required
-      />
-      <button type="submit">Suscribirme</button>
-    </form>
-  );
-};
 
 // Componente Instagram hardcodeado
 const InstagramPosts = () => {
