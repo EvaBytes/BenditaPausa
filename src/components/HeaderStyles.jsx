@@ -5,6 +5,8 @@ export const HeaderContainer = styled.header`
   border-bottom: 1px solid #333;
   padding: 1rem 0;
   position: relative;
+  box-shadow: 0 5px 4px -3px rgba(0, 0, 0, 0.30);
+
 `;
 
 export const Nav = styled.nav`
@@ -13,6 +15,7 @@ export const Nav = styled.nav`
   align-items: center;
   gap: 1rem;
   padding: 0 1rem;
+
 
   @media (min-width: 768px) {
     max-width: 1200px;
@@ -25,9 +28,29 @@ export const Nav = styled.nav`
 `;
 
 export const LogoImage = styled.img`
-  width: 100px;
-  height: auto;
+  height: 40px;
   object-fit: contain;
+
+  @media (min-width: 768px) {
+    height: auto;
+    width: 50%;
+  }
+`;
+
+export const MobileLogo = styled.a`
+  display: flex;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const DesktopLogo = styled.a`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const SearchContainer = styled.div`
@@ -51,10 +74,10 @@ export const SearchInput = styled.input`
 
 export const MobileTopBar = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   width: 100%;
+  padding: 0 1rem;
 
   @media (min-width: 768px) {
     display: none;
@@ -101,19 +124,38 @@ export const NavLinks = styled.ul`
 
 export const MobileMenu = styled.ul`
   position: absolute;
-  top: 70px;
-  right: 1rem;
-  background: #111;
-  padding: 1rem;
-  border-radius: 10px;
+  top: 60px;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 100%;
   list-style: none;
+  padding: 1rem 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  z-index: 10;
+  z-index: 1000;
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  li {
+    font-family: 'JetBrains Mono', monospace;
+    padding: 1rem 1.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    cursor: pointer;
+    color: #111;
+    transition: background-color 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: #f0f0f0;
+      outline: none;
+    }
   }
 `;
 

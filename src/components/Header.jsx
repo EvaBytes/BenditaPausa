@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import {HeaderContainer, Nav, LogoImage, NavLinks, NavLink, SearchInput, SearchContainer, BurgerButton, MobileMenu,MobileTopBar, SearchIcon, MobileSearchWrapper} from "./HeaderStyles";
+import {HeaderContainer, Nav, LogoImage, MobileLogo, DesktopLogo, NavLinks, NavLink, SearchInput, SearchContainer, BurgerButton, MobileMenu,MobileTopBar, SearchIcon, MobileSearchWrapper} from "./HeaderStyles";
 import logoImg from "../assets/logo.png";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaTimes, FaBars } from "react-icons/fa";
 
 
 const Header = () => {
@@ -18,15 +18,23 @@ const Header = () => {
       <Nav>
 
         <MobileTopBar>
-        <SearchIcon onClick={() => setSearchOpen(!searchOpen)} aria-label="Buscar">
-          <FaSearch size={20} />
-        </SearchIcon>
-          <BurgerButton onClick={() => setMenuOpen(!menuOpen)}>☰</BurgerButton>
+          <MobileLogo href="/">
+            <LogoImage src={logoImg} alt="Bendita Pausa Logo" />
+          </MobileLogo>
+
+          <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+            <SearchIcon onClick={() => setSearchOpen(!searchOpen)} aria-label="Buscar">
+              <FaSearch size={20} />
+            </SearchIcon>
+            <BurgerButton onClick={() => setMenuOpen(!menuOpen)} aria-label="Menú">
+              {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </BurgerButton>
+          </div>
         </MobileTopBar>
 
-        <a href="/">
+        <DesktopLogo href="/">
           <LogoImage src={logoImg} alt="Bendita Pausa Logo" />
-        </a>
+        </DesktopLogo>
 
         {searchOpen && (
           <MobileSearchWrapper>

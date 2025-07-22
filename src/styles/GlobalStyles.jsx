@@ -1,4 +1,5 @@
 export const GlobalStyles = createGlobalStyle`
+
   html, body, #root {
     height: 100%;
   }
@@ -19,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     background-color: #fdfdfd;
     color: #333;
     line-height: 1.6;
@@ -32,6 +33,10 @@ export const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3 {
     font-weight: 600;
+  }
+
+    strong {
+    font-weight: 700;
   }
 
   .container {
