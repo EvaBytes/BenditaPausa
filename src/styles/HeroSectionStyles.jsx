@@ -18,6 +18,10 @@ export const HeroSection = styled.section`
     font-size: 1.8rem;
 }
 
+.subheadline {
+  font-weight: 300;
+}
+
 
   button {
     margin-top: 1.5rem;
