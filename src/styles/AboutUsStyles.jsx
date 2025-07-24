@@ -4,10 +4,11 @@ export const AboutUsSection = styled.section`
   padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 
   h2 {
     margin-bottom: 1.5rem;
+    font-size: 2rem;
   }
 
   p {
@@ -39,7 +40,7 @@ export const Box = styled.div`
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   cursor: pointer;
-  text-align: center;
+  text-align: left;
 
   img {
     width: 100%;
