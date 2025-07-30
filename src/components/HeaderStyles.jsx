@@ -14,8 +14,6 @@ export const Nav = styled.nav`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 0 1rem;
-
 
   @media (min-width: 768px) {
     max-width: 1200px;
@@ -172,3 +170,21 @@ export const NavLink = styled.a`
     color: #a65a5a;
   }
 `;
+
+export const IconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  margin-left: 2.5rem;
+
+  svg {
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #a65a5a;
+    }
+  }
+`;
+
