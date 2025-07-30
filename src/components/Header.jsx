@@ -39,12 +39,11 @@ const Header = () => {
           </div>
         </MobileTopBar>
 
-        {/* Logo Desktop */}
         <DesktopLogo href="/">
           <LogoImage src={logoImg} alt="Bendita Pausa Logo" />
         </DesktopLogo>
 
-        {/* Buscador móvil */}
+        {/* Buscador MÓVIL */}
         {searchOpen && (
           <MobileSearchWrapper>
             <SearchInput
@@ -56,7 +55,7 @@ const Header = () => {
           </MobileSearchWrapper>
         )}
 
-        {/* Buscador desktop */}
+        {/* Buscador WEB */}
         <SearchContainer>
           <SearchInput
             type="search"
@@ -66,7 +65,6 @@ const Header = () => {
           />
         </SearchContainer>
 
-        {/* Navegación */}
         <NavLinks>
           <li>
             <NavLink href="/">Inicio</NavLink>
@@ -89,7 +87,6 @@ const Header = () => {
           </li>
         </NavLinks>
 
-        {/* Menú móvil desplegable */}
         {menuOpen && (
           <MobileMenu>
             <li>
