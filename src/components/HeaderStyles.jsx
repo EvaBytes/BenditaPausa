@@ -19,7 +19,7 @@ export const Nav = styled.nav`
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: min-content 1fr min-content;
     align-items: center;
     gap: 0;
   }
@@ -30,8 +30,10 @@ export const LogoImage = styled.img`
   object-fit: contain;
 
   @media (min-width: 768px) {
-    height: auto;
-    width: 50%;
+    width: auto;
+    height: 50px; 
+    margin-right: 1rem;
+
   }
 `;
 
