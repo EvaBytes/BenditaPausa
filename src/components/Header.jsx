@@ -67,13 +67,13 @@ const Header = () => {
 
         <NavLinks>
           <li>
-            <NavLink href="/">Inicio</NavLink>
+            <NavLink href="/">Productos</NavLink>
           </li>
           <li>
-            <NavLink href="/about">Nosotros</NavLink>
+            <NavLink href="/about">Conócenos</NavLink>
           </li>
           <li>
-            <NavLink href="/products">Productos</NavLink>
+            <NavLink href="/products">Talleres</NavLink>
           </li>
           <li>
             <NavLink href="/contact">Contacto</NavLink>
@@ -91,17 +91,17 @@ const Header = () => {
           <MobileMenu>
             <li>
               <NavLink href="/" onClick={handleNavClick}>
-                Inicio
+              Productos
               </NavLink>
             </li>
             <li>
               <NavLink href="/about" onClick={handleNavClick}>
-                Nosotros
+              Conócenos
               </NavLink>
             </li>
             <li>
               <NavLink href="/products" onClick={handleNavClick}>
-                Productos
+              Talleres
               </NavLink>
             </li>
             <li>
