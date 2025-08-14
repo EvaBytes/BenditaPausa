@@ -3,6 +3,8 @@ import { HeroSection } from "../../styles/HeroSectionStyles.jsx";
 import { AboutUs } from "../../pages/Home/Aboutus.jsx";
 import {NewsletterForm} from "./NewsletterForm.jsx";
 import { ShopCategoriesSection } from "../../pages/Home/ShopCategories.jsx";
+import { FindUs } from "../../pages/Home/FindUs.jsx";
+
 
 const Home = () => {
   return (
@@ -25,22 +27,23 @@ const Home = () => {
         <NewsletterForm />
       </section>
 
-      {/* BLOG */}
-      <section className="blog-block">
-        <h2>Visita nuestro blog</h2>
-        <p>Todas tenemos un vínculo con la lana </p>
-        <p>El conocimiento es poder, nuestro blog recoge artículos en los que te hablamos de procesos, investigación, pero también inspiración a la hora de tejer.</p>
-        <button onClick={() => window.location.href = "/blog"}>Ir al blog</button>
+      {/* FINDUS */}
+      <section className="findus-block">
+        <FindUs />
       </section>
 
-      {/* INSTAGRAM */}
-      <section className="instagram-block">
-        <h2>Últimas publicaciones en Instagram</h2>
-        <InstagramPosts />
-      </section>
-    </div>
+  {/* INSTAGRAM */}
+  <section className="instagram-block">
+    <h2>Últimas publicaciones en Instagram</h2>
+    <InstagramPosts />
+  </section>
+  </div>
+
+
   );
 };
+
+
 
 
 // Componente Instagram a sustituir por uno real más adelante.

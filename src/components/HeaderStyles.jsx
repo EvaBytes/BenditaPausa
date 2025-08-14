@@ -60,6 +60,8 @@ export const SearchContainer = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 0 2rem;
+
   }
 `;
 
@@ -121,6 +123,7 @@ export const NavLinks = styled.ul`
     justify-content: flex-end;
     list-style: none;
     gap: 1.5rem;
+    margin-left: 2rem;
   }
 `;
 
@@ -178,7 +181,7 @@ export const IconsContainer = styled.div`
   align-items: center;
   gap: 1rem;
   color: white;
-  margin-left: 2.5rem;
+  margin-left: 1.2rem;
 
   svg {
     cursor: pointer;
