@@ -20,7 +20,7 @@ const NewsletterForm = () => {
     <NewsletterSectionWrapper>
       <NewsletterTitle>SUSCRÍBETE A NUESTRA NEWSLETTER</NewsletterTitle>
       <NewsletterDesc>
-        Cada semana enviamos un mail en el que compartir contigo nuestras novedades, pensamientos y proyectos que inspiran a vivir la lana desde sus orígenes.
+        Queremos compartir contigo nuestras novedades, pensamientos y proyectos que inspiran a vivir la lana desde sus orígenes.
       </NewsletterDesc>
       <NewsletterFormBlock onSubmit={handleSubmit}>
         <Input

@@ -3,12 +3,11 @@ import { Wrapper, ScrollContainer, CategoryCard, Arrow } from "../../styles/Shop
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const categories = [
-  { title: "LANAS", image: "src/assets/Lana.jpg", link: "/tienda/lanas" },
+  { title: "HILATURAS", image: "src/assets/Lana.jpg", link: "/tienda/hilaturas" },
   { title: "KITS", image: "src/assets/Kits.jpg", link: "/tienda/kits" },
   { title: "ACCESORIOS", image: "src/assets/Accesorios.jpg", link: "/tienda/accesorios" },
   { title: "TEXTIL", image: "src/assets/Textil.jpg", link: "/tienda/textil" },
   { title: "VIVIR LA LANA", image: "src/assets/vivir-la-lana.jpg", link: "/tienda/vivir-la-lana" },
-  { title: "ALGODÓN", image: "src/assets/Algodón.jpg", link: "/tienda/algodon" },
 ];
 
 const ShopCategoriesSection = () => {
