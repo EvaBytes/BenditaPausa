@@ -53,7 +53,7 @@ export const FindUsButton = styled.button`
   font-family: 'JetBrains Mono', monospace;
   border-radius: 10px;
   border: none;
-  background-color: #222;
+  background-color: #1c6673;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -61,7 +61,7 @@ export const FindUsButton = styled.button`
   margin-top: 1rem;
 
   &:hover {
-    background-color: #333;
+    background-color: #17515b;
   }
 `;
 

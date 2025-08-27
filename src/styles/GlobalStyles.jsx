@@ -1,5 +1,6 @@
-export const GlobalStyles = createGlobalStyle`
+import { createGlobalStyle } from "styled-components";
 
+export const GlobalStyles = createGlobalStyle`
   html, body, #root {
     height: 100%;
   }
@@ -21,22 +22,29 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'JetBrains Mono', monospace;
-    background-color: #fdfdfd;
-    color: #333;
+    background-color: #ffffff; /* Fondo blanco limpio */
+    color: #000000; /* Texto principal en negro */
     line-height: 1.6;
   }
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: #186471; /* Enlaces con color corporativo */
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #0f4d54; /* Hover más oscuro */
   }
 
   h1, h2, h3 {
     font-weight: 600;
+    color: #000000; /* Títulos en negro */
   }
 
-    strong {
+  strong {
     font-weight: 700;
+    color: #186471; /* Resaltar con color primario */
   }
 
   .container {
@@ -44,6 +52,19 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
     padding: 0 1rem;
   }
-`;
 
-import { createGlobalStyle } from "styled-components";
+  button {
+    background-color: #1c6673;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #17515b;
+  }
+`;
