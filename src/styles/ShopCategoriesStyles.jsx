@@ -26,10 +26,9 @@ export const ScrollContainer = styled.div`
   }
 
   @media (min-width: 900px) {
-    padding: 0 6rem; 
+    padding: 0 6rem;
   }
 `;
-
 
 export const CategoryCard = styled.a`
   flex: 0 0 auto;
@@ -68,17 +67,21 @@ export const CategoryCard = styled.a`
     }
   }
 
-  .overlay {
+  /* Overlay semitransparente con blur y mensaje */
+  .overlay-message {
     position: absolute;
-    inset: 0;
-    background: rgba(200, 192, 203, 0.3);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-  }
-
-  &:hover .overlay {
-    opacity: 1;
+    inset: 0; /* ocupa todo el contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.4); /* capa semitransparente */
+    backdrop-filter: blur(6px); /* efecto nublado */
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    z-index: 2;
   }
 
   h3 {
@@ -91,18 +94,18 @@ export const CategoryCard = styled.a`
     text-align: center;
     font-size: 1rem;
     margin: 0;
-    z-index: 2;
+    z-index: 3;
   }
 `;
-
 
 export const Arrow = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: white;
+  color: #17515b;
   border: none;
-  border-radius: 50%;
+  border-radius: 10%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   z-index: 3;
   cursor: pointer;
@@ -116,5 +119,3 @@ export const Arrow = styled.button`
     right: 0.5rem;
   }
 `;
-
-

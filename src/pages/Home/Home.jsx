@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="home">
       <HeroSection>
-      <h1>
+      <h1 className="mainline">
         Descubre <br /> el arte de <br />la pausa
       </h1>
         <h5 className="subheadline">del campo <br />a tus agujas</h5>

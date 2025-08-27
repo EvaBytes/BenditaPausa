@@ -7,7 +7,6 @@ export const HeroSection = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   padding: 2rem 2rem;     
-  color: black;
   text-align: left;
   font-size: 1rem;
 
@@ -17,6 +16,7 @@ export const HeroSection = styled.section`
     background-repeat: no-repeat;
     font-size: 1.8rem;
 }
+
 
 .subheadline {
   font-weight: 300;
@@ -30,12 +30,13 @@ export const HeroSection = styled.section`
     cursor: pointer;
     border: none;
     border-radius: 6px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
+    background-color: #fff;
+    color: black;
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 1);
+      background-color: #000;
+      color:white;
     }
   }
 
