@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const categories = [
   { title: "HILATURAS", image: "src/assets/Lana.jpg", link: "/tienda/hilaturas" },
-  { title: "KITS", image: "src/assets/Kits.jpg", link: "/tienda/kits" },
   { title: "ACCESORIOS", image: "src/assets/Accesorios.jpg", link: "/tienda/accesorios" },
   { title: "TEXTIL", image: "src/assets/Textil.jpg", link: "/tienda/textil" },
   { title: "VIVIR LA LANA", image: "src/assets/vivir-la-lana.jpg", link: "/tienda/vivir-la-lana" },
