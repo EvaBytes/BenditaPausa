@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutUsSection = styled.section`
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 4rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
   text-align: left;

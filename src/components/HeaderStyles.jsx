@@ -179,7 +179,7 @@ export const MobileMenu = styled.ul`
 `;
 
 export const NavLink = styled.a`
-  font-weight: 500;
+  font-weight: 600;
   color: #186471;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -187,7 +187,7 @@ export const NavLink = styled.a`
 
   &:hover {
     color: #0f4a4a; 
-    font-weight: 700;
+    font-weight: 800;
 
   }
 `;

@@ -12,8 +12,8 @@ const categories = [
 const messages = [
   "Proximamente...🐑",
   "Se está tejiendo algo nuevo.",
-  "Suscríbete a nuestra Newsletter",
-  "y te avisaremos cuando esté la tienda disponible",
+  "Suscríbete a nuestra Newsletter...",
+  "y te avisaremos cuando esté la tienda disponible.",
 ];
 
 const ShopCategoriesSection = () => {
@@ -48,7 +48,6 @@ const ShopCategoriesSection = () => {
     const container = scrollRef.current;
     if (!container) return;
 
-    // Comprobar justo después del render
     setTimeout(checkScrollPosition, 50);
 
     container.addEventListener("scroll", checkScrollPosition, { passive: true });
@@ -72,15 +71,16 @@ const ShopCategoriesSection = () => {
 
       <ScrollContainer ref={scrollRef}>
         {categories.map((cat, index) => (
-          <CategoryCard href={cat.link} key={cat.title}>
-            <div className="card-inner">
-              <img src={cat.image} alt={cat.title} />
-              <div className="overlay-message">
-                {messages[index % messages.length]}
-              </div>
-              <h3>{cat.title}</h3>
-            </div>
-          </CategoryCard>
+          <CategoryCard key={cat.title} href={cat.link} disabled>
+  <div className="card-inner">
+    <img src={cat.image} alt={cat.title} />
+    <div className="overlay-message">
+      {messages[index % messages.length]}
+    </div>
+    <h3>{cat.title}</h3>
+  </div>
+</CategoryCard>
+
         ))}
       </ScrollContainer>
 

@@ -22,7 +22,6 @@ const Home = () => {
       <AboutUs />
 
 
-
       {/* NEWSLETTER */}
       <section className="newsletter-block">
         <NewsletterForm />
@@ -37,6 +36,7 @@ const Home = () => {
       <section className="instagram-block">
         <Instagram />
       </section>
+
   </div>
 
 

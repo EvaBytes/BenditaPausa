@@ -37,6 +37,12 @@ export const CategoryCard = styled.a`
   position: relative;
   overflow: visible;
 
+  /* DESACTIVAR CURSOR Y CLICS SI disabled es true */
+  cursor: ${(props) => (props.disabled ? "default" : "pointer")};
+  pointer-events: ${(props) => (props.disabled ? "none" : "auto")};
+  opacity: ${(props) => (props.disabled ? 0.6 : 1)};
+  transition: opacity 0.3s ease;
+
   @media (min-width: 900px) {
     width: calc((100vw - 6rem * 2 - 2rem) / 3);
     aspect-ratio: 1 / 1;
@@ -66,8 +72,8 @@ export const CategoryCard = styled.a`
       height: 100%;
     }
   }
+/* BORRAR CON LA TIENDA ACTIVA */
 
-  /* BORRAR CUANDO LA TIENDA ESTE ACTIVA */
   .overlay-message {
     position: absolute;
     inset: 0; 
@@ -98,6 +104,7 @@ export const CategoryCard = styled.a`
   }
 `;
 
+
 export const Arrow = styled.button`
   position: absolute;
   top: 50%;
@@ -119,3 +126,4 @@ export const Arrow = styled.button`
     right: 0.5rem;
   }
 `;
+
