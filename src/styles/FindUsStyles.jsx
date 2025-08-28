@@ -34,7 +34,6 @@ export const FindUsDesc = styled.p`
   color: #222;
   margin-bottom: 1rem;
   line-height: 1.4;
-  max-width: 700px;
 
   @media (min-width: 600px) {
     font-size: 1.4rem;
@@ -64,4 +63,23 @@ export const FindUsButton = styled.button`
     background-color: #17515b;
   }
 `;
+
+export const FindUsMap = styled.div`
+  width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  @media (min-width: 900px) {
+    height: 500px;
+  }
+`;
+
 

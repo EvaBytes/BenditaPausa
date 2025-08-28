@@ -4,6 +4,7 @@ import { AboutUs } from "../../pages/Home/Aboutus.jsx";
 import {NewsletterForm} from "./NewsletterForm.jsx";
 import { ShopCategoriesSection } from "../../pages/Home/ShopCategories.jsx";
 import { FindUs } from "../../pages/Home/FindUs.jsx";
+import { Instagram } from "../../pages/Home/Instagram.jsx";
 
 
 const Home = () => {
@@ -33,10 +34,9 @@ const Home = () => {
       </section>
 
   {/* INSTAGRAM */}
-  <section className="instagram-block">
-    <h2>Últimas publicaciones en Instagram</h2>
-    <InstagramPosts />
-  </section>
+      <section className="instagram-block">
+        <Instagram />
+      </section>
   </div>
 
 
@@ -45,23 +45,5 @@ const Home = () => {
 
 
 
-
-// Componente Instagram a sustituir por uno real más adelante.
-const InstagramPosts = () => {
-  const posts = [
-    "https://via.placeholder.com/150?text=Post+1",
-    "https://via.placeholder.com/150?text=Post+2",
-    "https://via.placeholder.com/150?text=Post+3",
-    "https://via.placeholder.com/150?text=Post+4",
-  ];
-
-  return (
-    <div className="instagram-posts">
-      {posts.map((url, i) => (
-        <img key={i} src={url} alt={`Instagram post ${i + 1}`} />
-      ))}
-    </div>
-  );
-};
 
 export { Home };

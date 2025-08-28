@@ -67,15 +67,15 @@ export const CategoryCard = styled.a`
     }
   }
 
-  /* Overlay semitransparente con blur y mensaje */
+  /* BORRAR CUANDO LA TIENDA ESTE ACTIVA */
   .overlay-message {
     position: absolute;
-    inset: 0; /* ocupa todo el contenedor */
+    inset: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.4); /* capa semitransparente */
-    backdrop-filter: blur(6px); /* efecto nublado */
+    background: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(6px); 
     color: #333;
     font-size: 1.2rem;
     font-weight: bold;

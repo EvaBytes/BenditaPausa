@@ -22,29 +22,29 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'JetBrains Mono', monospace;
-    background-color: #ffffff; /* Fondo blanco limpio */
-    color: #000000; /* Texto principal en negro */
+    background-color: #ffffff; 
+    color: #000000; 
     line-height: 1.6;
   }
 
   a {
     text-decoration: none;
-    color: #186471; /* Enlaces con color corporativo */
+    color: #186471; 
     transition: color 0.3s ease;
   }
 
   a:hover {
-    color: #0f4d54; /* Hover más oscuro */
+    color: #0f4d54; 
   }
 
   h1, h2, h3 {
     font-weight: 600;
-    color: #000000; /* Títulos en negro */
+    color: #000000; 
   }
 
   strong {
     font-weight: 700;
-    color: #186471; /* Resaltar con color primario */
+    color: #186471; 
   }
 
   .container {
