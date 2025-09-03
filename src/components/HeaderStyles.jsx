@@ -25,7 +25,7 @@ export const Nav = styled.nav`
 `;
 
 export const LogoImage = styled.img`
-  height: 100px;
+  height: 60px;
   object-fit: contain;
 
   @media (min-width: 768px) {

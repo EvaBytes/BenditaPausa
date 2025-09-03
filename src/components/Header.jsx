@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import {HeaderContainer, Nav, LogoImage, MobileLogo, DesktopLogo, NavLinks, NavLink, SearchInput, SearchContainer, BurgerButton, MobileMenu,MobileTopBar, SearchIcon, MobileSearchWrapper, IconsContainer} from "./HeaderStyles";
-import logoImg from "../assets/LogoMobile.png";
+import {HeaderContainer, Nav, LogoImage, MobileLogo, DesktopLogo, NavLinks, NavLink, SearchInput, SearchContainer, BurgerButton, MobileMenu, MobileTopBar, SearchIcon, MobileSearchWrapper, IconsContainer} from "./HeaderStyles";
 import logoWeb from "../assets/LogoWEB.png";
-import { FaSearch, FaTimes, FaBars} from "react-icons/fa";
+import { FaSearch, FaTimes, FaBars } from "react-icons/fa";
 import { FiUser, FiShoppingCart } from "react-icons/fi";
-
 
 const Header = () => {
   const [query, setQuery] = useState("");
@@ -18,10 +16,9 @@ const Header = () => {
   return (
     <HeaderContainer>
       <Nav>
-        {/* Móvil */}
         <MobileTopBar>
           <MobileLogo href="/">
-            <LogoImage src={logoImg} alt="Bendita Pausa Logo" />
+            <LogoImage src={logoWeb} alt="Bendita Pausa Logo" />
           </MobileLogo>
 
           <div style={{ display: "flex", gap: "1rem" }}>
@@ -79,12 +76,11 @@ const Header = () => {
           <li>
             <NavLink href="/contact">Contacto</NavLink>
           </li>
-
           <li>
-          <IconsContainer>
-          <FiShoppingCart size={24} aria-label="Carrito" />
-          <FiUser size={24} aria-label="Cuenta" />
-        </IconsContainer>
+            <IconsContainer>
+              <FiShoppingCart size={24} aria-label="Carrito" />
+              <FiUser size={24} aria-label="Cuenta" />
+            </IconsContainer>
           </li>
         </NavLinks>
 
@@ -92,17 +88,17 @@ const Header = () => {
           <MobileMenu>
             <li>
               <NavLink href="/" onClick={handleNavClick}>
-              Productos
+                Productos
               </NavLink>
             </li>
             <li>
               <NavLink href="/about" onClick={handleNavClick}>
-              Conócenos
+                Conócenos
               </NavLink>
             </li>
             <li>
               <NavLink href="/products" onClick={handleNavClick}>
-              Talleres
+                Talleres
               </NavLink>
             </li>
             <li>
