@@ -13,6 +13,18 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  const scrollToContact = (e) => {
+    e.preventDefault();
+    const contactElement = document.getElementById('contacto');
+    if (contactElement) {
+      contactElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    handleNavClick(); 
+  };
+
   return (
     <HeaderContainer>
       <Nav>
@@ -74,7 +86,7 @@ const Header = () => {
             <NavLink href="/products">Talleres</NavLink>
           </li>
           <li>
-            <NavLink href="/contact">Contacto</NavLink>
+            <NavLink href="#contacto" onClick={scrollToContact}>Contacto</NavLink>
           </li>
           <li>
             <IconsContainer>
@@ -102,7 +114,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="/contact" onClick={handleNavClick}>
+              <NavLink href="#contacto" onClick={scrollToContact}>
                 Contacto
               </NavLink>
             </li>

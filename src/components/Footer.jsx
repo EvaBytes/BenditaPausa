@@ -4,7 +4,7 @@ import { FaInstagram, FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="contacto">
       <FooterContent>
         <FooterSection>
           <h4>Empresa</h4>
