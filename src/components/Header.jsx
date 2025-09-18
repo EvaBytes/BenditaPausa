@@ -83,7 +83,7 @@ const Header = () => {
             <NavLink href="/about">Conócenos</NavLink>
           </li>
           <li>
-            <NavLink href="/products">Talleres</NavLink>
+            <NavLink href="/talleres">Talleres</NavLink>
           </li>
           <li>
             <NavLink href="#contacto" onClick={scrollToContact}>Contacto</NavLink>
@@ -109,7 +109,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="/products" onClick={handleNavClick}>
+              <NavLink href="/talleres" onClick={handleNavClick}>
                 Talleres
               </NavLink>
             </li>
