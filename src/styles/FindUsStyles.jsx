@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FindUsWrapper = styled.section`
-  background: url('src/assets/woolstore.png') no-repeat center center;
+  background: url('/woolstore.png') no-repeat center center;
   background-size: cover;
   padding: 2.5rem 1rem 2rem 1rem;
   border-radius: 0;

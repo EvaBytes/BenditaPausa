@@ -2,9 +2,9 @@ import React from "react";
 import { AboutUsSection, BoxesContainer, Box } from "../../styles/AboutUsStyles.jsx";
 
 const aboutLinks = [
-  { title: "NOSOTROS", image: "src/assets/About.png", link: "/nosotros" },
-  { title: "COMUNIDAD", image: "src/assets/Community.png", link: "/comunidad" },
-  { title: "TALLERES", image: "src/assets/Workshops.png", link: "/talleres" },
+  { title: "NOSOTROS", image: "/About.png", link: "/nosotros" },
+  { title: "COMUNIDAD", image: "/Community.png", link: "/comunidad" },
+  { title: "TALLERES", image: "/Workshops.png", link: "/talleres" },
 ];
 
 const AboutUs = () => {

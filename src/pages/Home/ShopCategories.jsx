@@ -3,10 +3,10 @@ import { Wrapper, ScrollContainer, CategoryCard, Arrow } from "../../styles/Shop
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const categories = [
-  { title: "HILATURAS", image: "src/assets/Lana.jpg", link: "/tienda/hilaturas" },
-  { title: "ACCESORIOS", image: "src/assets/Accesorios.jpg", link: "/tienda/accesorios" },
-  { title: "TEXTIL", image: "src/assets/Textil.jpg", link: "/tienda/textil" },
-  { title: "VIVIR LA LANA", image: "src/assets/vivir-la-lana.jpg", link: "/tienda/vivir-la-lana" },
+  { title: "HILATURAS", image: "/Lana.jpg", link: "/tienda/hilaturas" },
+  { title: "ACCESORIOS", image: "/Accesorios.jpg", link: "/tienda/accesorios" },
+  { title: "TEXTIL", image: "/Textil.jpg", link: "/tienda/textil" },
+  { title: "VIVIR LA LANA", image: "/vivir-la-lana.jpg", link: "/tienda/vivir-la-lana" },
 ];
 
 const messages = [

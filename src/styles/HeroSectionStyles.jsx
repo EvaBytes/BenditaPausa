@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import homeBG from "../assets/HomeBG.jpg";
+import homeBG from "/HomeBG.jpg";
 
 export const HeroSection = styled.section`
   background-image: url(${homeBG});

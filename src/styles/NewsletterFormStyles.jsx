@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NewsletterSectionWrapper = styled.section`
-  background: url('src/assets/woolnewsletter.png') no-repeat center center;
+  background: url('/woolnewsletter.png') no-repeat center center;
   background-size: cover;
   padding: 2.5rem 1rem 2rem 1rem;
   border-radius: 0;
