@@ -88,12 +88,15 @@ const Header = () => {
           <li>
             <NavLink href="#contacto" onClick={scrollToContact}>Contacto</NavLink>
           </li>
+          {/* ACTIVAR CUANDO LA TIENDA ESTE LISTA
+          
           <li>
             <IconsContainer>
               <FiShoppingCart size={24} aria-label="Carrito" />
               <FiUser size={24} aria-label="Cuenta" />
             </IconsContainer>
-          </li>
+          </li>*/}
+
         </NavLinks>
 
         {menuOpen && (

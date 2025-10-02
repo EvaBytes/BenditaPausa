@@ -8,7 +8,7 @@ const Footer = () => {
       <FooterContent>
         <FooterSection>
           <h4>Empresa</h4>
-          <a href="/privacy">Política de privacidad</a>
+          <a href="/politica-privacidad">Política de privacidad</a>
           <a href="/terms">Términos y condiciones</a>
           <a href="/returns">Política de devoluciones</a>
         </FooterSection>
