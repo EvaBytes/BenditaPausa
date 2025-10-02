@@ -19,8 +19,9 @@ const Home = () => {
       </HeroSection>
 
       <ShopCategoriesSection />
-      <AboutUs />
-
+      <section id="aboutus">
+        <AboutUs />
+      </section>
 
       {/* NEWSLETTER */}
       <section className="newsletter-block">

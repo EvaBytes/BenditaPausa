@@ -15,14 +15,26 @@ const Header = () => {
 
   const scrollToContact = (e) => {
     e.preventDefault();
-    const contactElement = document.getElementById('contacto');
+    const contactElement = document.getElementById("contacto");
     if (contactElement) {
-      contactElement.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      contactElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
-    handleNavClick(); 
+    handleNavClick();
+  };
+
+  const scrollToAbout = (e) => {
+    e.preventDefault();
+    const aboutElement = document.getElementById("aboutus");
+    if (aboutElement) {
+      aboutElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    handleNavClick();
   };
 
   return (
@@ -80,23 +92,27 @@ const Header = () => {
             <NavLink href="/">Productos</NavLink>
           </li>
           <li>
-            <NavLink href="/about">Conócenos</NavLink>
+            <NavLink href="#aboutus" onClick={scrollToAbout}>
+              Conócenos
+            </NavLink>
           </li>
           <li>
             <NavLink href="/talleres">Talleres</NavLink>
           </li>
           <li>
-            <NavLink href="#contacto" onClick={scrollToContact}>Contacto</NavLink>
+            <NavLink href="#contacto" onClick={scrollToContact}>
+              Contacto
+            </NavLink>
           </li>
+
           {/* ACTIVAR CUANDO LA TIENDA ESTE LISTA
-          
           <li>
             <IconsContainer>
               <FiShoppingCart size={24} aria-label="Carrito" />
               <FiUser size={24} aria-label="Cuenta" />
             </IconsContainer>
-          </li>*/}
-
+          </li>
+          */}
         </NavLinks>
 
         {menuOpen && (
@@ -107,7 +123,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="/about" onClick={handleNavClick}>
+              <NavLink href="#aboutus" onClick={scrollToAbout}>
                 Conócenos
               </NavLink>
             </li>
